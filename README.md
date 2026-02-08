@@ -48,15 +48,6 @@ The project uses anonymized medical transcriptions categorized by specialty:
 - **Format**: CSV file with specialty and transcription columns
 - **Specialties**: Multiple medical specialties including Allergy/Immunology, Orthopedic, Bariatrics, Cardiovascular, Urology, and more
 
-## Installation
-
-### Prerequisites
-
-```bash
-python >= 3.8
-pip
-OpenAI API key
-```
 
 ### Setup Instructions
 
@@ -86,20 +77,7 @@ OPENAI_API_KEY=your-api-key-here
 data/transcriptions.csv
 ```
 
-## Usage
-
-### Running the Notebook
-
-1. Launch Jupyter Notebook:
-```bash
-jupyter notebook
-```
-
-2. Open `notebook_enhanced.ipynb`
-
-3. Run all cells sequentially to:
-   - Load and explore the medical transcriptions
-   - Extract patient information using OpenAI
+## using OpenAI
    - Retrieve ICD-10 codes
    - Analyze results and generate visualizations
    - Export processed data
@@ -116,22 +94,6 @@ jupyter notebook
 - Uses OpenAI API for accurate medical code mapping
 - Returns code list or 'Unknown' if not applicable
 
-## Project Structure
-
-```
-medical-transcript-processing/
-│
-├── data/
-│   └── transcriptions.csv          # Input medical transcripts
-│
-├── notebook_enhanced.ipynb         # Main analysis notebook
-├── README.md                        # Project documentation
-├── requirements.txt                 # Python dependencies
-├── EXECUTIVE_SUMMARY.md            # One-page project summary
-│
-└── outputs/
-    └── processed_medical_transcripts.csv  # Extracted structured data
-```
 
 ## Results
 
@@ -182,34 +144,4 @@ The project uses GPT-4o-mini for cost-effective processing:
 - Develop a web interface for real-time processing
 - Add multi-language support for international use
 
-## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Lakeside Healthcare Network for the use case
-- OpenAI for providing the API infrastructure
-- Medical coding standards organizations (WHO, CMS)
-
-## Contact
-
-For questions or feedback, please open an issue on GitHub or contact the project maintainer.
-
-## Citation
-
-If you use this project in your research or work, please cite:
-
-```
-Medical Transcript Processing with ICD-10 Code Extraction
-GitHub: https://github.com/yourusername/medical-transcript-processing
-Year: 2025
-```
-
----
-
-**Disclaimer**: This project is for educational and research purposes. All medical data should be reviewed by qualified healthcare professionals before use in clinical or billing contexts.
